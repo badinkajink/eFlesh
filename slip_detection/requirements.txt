@@ -1,0 +1,11 @@
+numpy>=1.25.2
+hydra-core
+pyzmq
+scipy
+opencv-python
+gdown
+gradio
+reskin-sensor
+
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch
