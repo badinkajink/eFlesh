@@ -64,6 +64,7 @@ The conversion from an input CAD file to a fully fabricated eFlesh sensor goes t
 - We use <a href="https://github.com/SoftFever/OrcaSlicer">OrcaSlicer</a>, an open-source slicing software to slice the generated .stl file, and to 3D print it.
 
 - Correctly configure your 3D printer and TPU filament (we use Bambu X1C (0.4mm) and Polymaker 95A TPU Blue). We use a custom preset for filament settings as shown in the image, to minimize TPU stringing.
+![settings](https://github.com/user-attachments/assets/dbd2a048-7602-4b70-8727-fa2ac21b89bb)
 
 - Although the lattice is 3D printable without supports, if you need supports for the magnetometer region, turn on 'Supports (Manual)' and 'Paint Supports' on the regions that are overhangs. Following this, click on 'Slice'.
 
