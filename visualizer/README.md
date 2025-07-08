@@ -1,5 +1,7 @@
 # eFlesh Visualizer
 
+```pip install reskin-sensor anyskin pygame matplotlib numpy==1.26.4```
+
 1. Connect the magnetometer circuit board to the microcontroller using the provided QWIIC cable.
 
 2. Connect the microcontroller (Adafruit QT Py) to your computer using a USB-C cable.
