@@ -68,7 +68,7 @@ We use [N52 neodymium magnets](https://www.mcmaster.com/products/magnets/magnets
 
 ### Hall Sensors / Magnetometers
 
-We use the rigid magnetometer PCBs used in Reskin and AnySkin. Details can be found in the [circuit section](https://github.com/raunaqbhirangi/reskin_sensor/tree/main/circuits) of [Reskin](https://reskin.dev/)'s repository.
+Please upload the arduino code located in ```arduino/5X_eflesh_stream/5X_eflesh_stream.ino``` to the qtPy. We use the rigid magnetometer PCBs used in Reskin and AnySkin. Details can be found in the [circuit section](https://github.com/raunaqbhirangi/reskin_sensor/tree/main/circuits) of [Reskin](https://reskin.dev/)'s repository.
 
 ## Sensor Characterization
 

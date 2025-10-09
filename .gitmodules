@@ -1,3 +1,6 @@
 [submodule "visuoskin"]
 	path = visuoskin
 	url = git@github.com:raunaqbhirangi/visuoskin.git
+[submodule "arduino/arduino-MLX90393"]
+	path = arduino/arduino-MLX90393
+	url = https://github.com/tesshellebrekers/arduino-MLX90393.git
