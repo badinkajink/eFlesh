@@ -62,11 +62,17 @@ def create_pouch(magnet_diameter, magnet_thickness, center = [0, 0, 0], name = "
 
 if __name__ == "__main__":
 
-    input_path = "micro.obj"
-    output_path = "boolean.obj"
+    finger_name = "fingers/finger_v4_0.01_8.obj_False"
+    cx = 6.5
+    cy = 6.5
+    delta = 13
+    input_path = f"{finger_name}.obj"
+    output_path = f"{finger_name}_pouch.obj"
     list_of_magnets = [
-        [15, 3.2, [15, 10, 1]], # [diameter, thickness, [centerX, centerY, centerZ]]
-        [9 ,   4, [30, 0, 5]]
+        [7.8, 1.65, [cx, cy, 2]], # [diameter, thickness, [centerX, centerY, centerZ]]
+        [7.8, 1.65, [cx + delta, cy, 2]],
+        [7.8, 1.65, [cx + delta, cy + delta, 2]],
+        [7.8, 1.65, [cx, cy + delta, 2]],
     ]
 
     # Clear existing objects (optional)
