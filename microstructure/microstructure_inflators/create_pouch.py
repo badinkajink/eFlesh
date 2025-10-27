@@ -62,18 +62,46 @@ def create_pouch(magnet_diameter, magnet_thickness, center = [0, 0, 0], name = "
 
 if __name__ == "__main__":
 
-    finger_name = "fingers/finger_v4_0.01_8.obj_False"
+    finger_name = "fingers/finger_v5_0.01_8.obj_False"
     cx = 6.5
     cy = 6.5
     delta = 13
     input_path = f"{finger_name}.obj"
     output_path = f"{finger_name}_pouch.obj"
     list_of_magnets = [
-        [7.8, 1.65, [cx, cy, 2]], # [diameter, thickness, [centerX, centerY, centerZ]]
-        [7.8, 1.65, [cx + delta, cy, 2]],
-        [7.8, 1.65, [cx + delta, cy + delta, 2]],
-        [7.8, 1.65, [cx, cy + delta, 2]],
+        [7.40, 2.90, [cx, cy, 2.5]], # [diameter, thickness, [centerX, centerY, centerZ]]
+        [7.40, 2.90, [cx + delta, cy, 2.5]],
+        [7.40, 2.90, [cx + delta, cy + delta, 2.50]],
+        [7.40, 2.90, [cx, cy + delta, 2.50]],
     ]
+
+    # results
+    # the press fit is almost good. 2.9 is cozy. i think it's ok to let the TPU fill it up
+    # list_of_magnets = [
+    #     [7.50, 2.60, [cx, cy, 2]], # [diameter, thickness, [centerX, centerY, centerZ]]
+    #     [7.50, 2.70, [cx + delta, cy, 1.95]],
+    #     [7.50, 2.80, [cx + delta, cy + delta, 1.90]],
+    #     [7.50, 2.90, [cx, cy + delta, 1.85]],
+    # ]
+
+    # results
+    # still too loose, lowest depth (2.20) is almost good
+    # list_of_magnets = [
+    #     [7.75, 2.05, [cx, cy, 2]], # [diameter, thickness, [centerX, centerY, centerZ]]
+    #     [7.70, 2.10, [cx + delta, cy, 1.95]],
+    #     [7.65, 2.15, [cx + delta, cy + delta, 1.90]],
+    #     [7.60, 2.20, [cx, cy + delta, 1.85]],
+    # ]
+
+    # print results w 7.8 x 1.65 dims
+    # magnet peeks out a little bit, by like 0.3-4 mm
+    # diameter is a almost a loose fit
+    # list_of_magnets = [
+    #     [7.8, 1.65, [cx, cy, 2]], # [diameter, thickness, [centerX, centerY, centerZ]]
+    #     [7.8, 1.65, [cx + delta, cy, 2]],
+    #     [7.8, 1.65, [cx + delta, cy + delta, 2]],
+    #     [7.8, 1.65, [cx, cy + delta, 2]],
+    # ]
 
     # Clear existing objects (optional)
     bpy.ops.object.select_all(action='SELECT')
